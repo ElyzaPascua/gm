@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="groupmate.JoinGroupPage"
+             Title="Join Group"
+             BackgroundColor="#F4E6FF">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+
+        <HorizontalStackLayout 
+                                Grid.Row="0"
+                               HorizontalOptions="End"
+                               Spacing="0"
+                               Padding="0,10,10,0">
+
+                        <ImageButton    
+                                Source="notification.png"
+                                 HeightRequest="60"
+                                 WidthRequest="200"
+                                 BackgroundColor="Transparent"
+                                 />
+
+                        <ImageButton 
+                                 Source="profile.png"
+                                 HeightRequest="60"
+                                 WidthRequest="150"
+                                 BackgroundColor="Transparent"
+                                 />
+
+        </HorizontalStackLayout>
+
+        <VerticalStackLayout
+                             Grid.Row="1"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Padding="30"
+                             Spacing="25">
+
+            <Label Text="Join your Groupmate!"
+                   FontAttributes="Bold"
+                   FontSize="28"
+                   TextColor="#3D0066"
+                   HorizontalOptions="Center"/>
+
+            <Image Source="niggers.png"
+                   WidthRequest="355"
+                   HeightRequest="355"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Join in. Stand tall. Succeed Together."
+                   FontSize="16"
+                   TextColor="#3D0066"
+                   HorizontalOptions="Center"/>
+
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Enter an invite below to join an existing group"
+                       FontSize="14"
+                       TextColor="#3D0066"
+                       HorizontalOptions="Center"/>
+
+
+                <Border 
+                        StrokeThickness="0"
+                        BackgroundColor="White"
+                        StrokeShape="RoundRectangle 25"
+                        HeightRequest="50"
+                        VerticalOptions="Center">
+                    
+                    <Grid 
+                        ColumnDefinitions="*,Auto" 
+                        Padding="10,0">
+                        
+                        <Entry 
+                                Placeholder="Invite Code..."
+                               FontSize="14"
+                               TextColor="#3D0066"
+                               PlaceholderColor="#AA66CC"/>
+
+                        <ImageButton
+                                Source="gayman.png"    
+                                Grid.Column="1"
+                                BackgroundColor="#9C27B0"
+                                WidthRequest="50"
+                                HeightRequest="50"
+                                CornerRadius="25"
+                                
+                                />
+                    </Grid>
+                </Border>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+
+
+        <Border
+    Grid.Row="2"
+        StrokeThickness="0"
+        HeightRequest="80"
+        StrokeShape="RoundRectangle 25"
+        Background="#E5D4FF"
+        Margin="100,0,100,20"
+        HorizontalOptions="Fill"
+        VerticalOptions="End">
+
+            <HorizontalStackLayout
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Spacing="60">
+
+                <VerticalStackLayout 
+                HorizontalOptions="Center" 
+                Spacing="3">
+
+                    <Image 
+                Source="book.png" 
+                WidthRequest="25" 
+                HeightRequest="25"/>
+                    <Label 
+                Text="add project" 
+                FontSize="12" TextColor="#3D0066" 
+                HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+
+                <Border
+                WidthRequest="60"
+                HeightRequest="60"
+                StrokeThickness="0"
+                Background="#7F00FF"
+                StrokeShape="RoundRectangle 30"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+                    <Image 
+                Source="home.png"
+               WidthRequest="30"
+               HeightRequest="30"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+                </Border>
+
+                <VerticalStackLayout 
+                HorizontalOptions="Center" 
+                Spacing="3">
+
+                    <Image 
+                Source="search.png" 
+                WidthRequest="25" 
+                HeightRequest="25"/>
+
+                    <Label 
+    
+                Text="search project"
+                FontSize="12" 
+                TextColor="#3D0066" 
+                HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Border>
+    </Grid>
+</ContentPage>

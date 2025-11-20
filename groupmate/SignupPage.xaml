@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="groupmate.SignupPage"
+             BackgroundColor="White">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <Grid HeightRequest="300">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#9638E0" Offset="0.1" />
+                    <GradientStop Color="#521F7A" Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <Image x:Name="HeaderImage"
+                   Source="waveguy.png"
+                   HeightRequest="260"
+                   HorizontalOptions="End"
+                   Margin="0,40,0,0" />
+
+            <Label x:Name="HeaderLabel"
+                   Text="Create Your Account"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="30,230,0,0"
+                   HorizontalOptions="Start"
+                   VerticalOptions="End" />
+        </Grid>
+
+        <Border Grid.Row="1"
+                StrokeShape="RoundRectangle 40"
+                BackgroundColor="White"
+                Margin="0,-40,0,0"
+                Padding="0">
+            <Border.Shadow>
+                <Shadow Brush="#33000000" Radius="8" />
+            </Border.Shadow>
+
+            <ScrollView>
+                <VerticalStackLayout Padding="30,40" Spacing="20">
+
+                    <Border Stroke="#DDD" 
+                            StrokeShape="RoundRectangle 20" 
+                            BackgroundColor="White" 
+                            Padding="10">
+                        
+                        <Grid ColumnDefinitions="Auto,*" 
+                              VerticalOptions="Center">
+                            
+                            <Entry x:Name="LastNameEntry"
+                                   Grid.Column="1"
+                                   Placeholder="Last Name"
+                                   PlaceholderColor="#999"
+                                   TextColor="Black"
+                                   FontSize="16"
+                                   Margin="10,0,0,0"/>
+                        </Grid>
+                    </Border>
+
+                    <Border Stroke="#DDD" 
+                            StrokeShape="RoundRectangle 20" 
+                            BackgroundColor="White" 
+                            Padding="10">
+                        
+                        <Grid ColumnDefinitions="Auto,*" VerticalOptions="Center">
+                            <Entry x:Name="FirstNameEntry"
+                                   Grid.Column="1"
+                                   Placeholder="First Name"
+                                   PlaceholderColor="#999"
+                                   TextColor="Black"
+                                   FontSize="16"
+                                   Margin="10,0,0,0"/>
+                        </Grid>
+                    </Border>
+
+                    <Border Stroke="#DDD" 
+                            StrokeShape="RoundRectangle 20" 
+                            BackgroundColor="White" 
+                            Padding="10">
+                        
+                        <Grid ColumnDefinitions="Auto,*" VerticalOptions="Center">
+                            <Entry x:Name="EmailEntry"
+                                   Grid.Column="1"
+                                   Placeholder="example@gmail.com"
+                                   PlaceholderColor="#999"
+                                   TextColor="Black"
+                                   FontSize="16"
+                                   Margin="10,0,0,0"/>
+                        </Grid>
+                    </Border>
+
+                    <Border Stroke="#DDD" 
+                            StrokeShape="RoundRectangle 20" 
+                            BackgroundColor="White" 
+                            Padding="10">
+                        
+                        <Picker x:Name="CoursePicker"
+                                Title="Course"
+                                TitleColor="#999"
+                                TextColor="Black"
+                                FontSize="16">
+                            <Picker.Items>
+                                <x:String>BSCS</x:String>
+                                <x:String>BSIT</x:String>
+                                <x:String>BSTM</x:String>
+                                <x:String>BSHM</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Border>
+
+                    <Border Stroke="#DDD" 
+                            StrokeShape="RoundRectangle 20" 
+                            BackgroundColor="White" 
+                            Padding="10">
+                        
+                        <Grid 
+                            ColumnDefinitions="Auto,*" 
+                              VerticalOptions="Center">
+                            <Entry x:Name="PasswordEntry"
+                                   Grid.Column="1"
+                                   Placeholder="Password"
+                                   IsPassword="True"
+                                   PlaceholderColor="#999"
+                                   TextColor="Black"
+                                   FontSize="16"
+                                   Margin="10,0,0,0"/>
+                        </Grid>
+                    </Border>
+
+                    <Border StrokeShape="RoundRectangle 25" 
+                            StrokeThickness="0">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                
+                                <GradientStop Color="#9638E0" 
+                                              Offset="0.0"/>
+                                <GradientStop Color="#521F7A" 
+                                              Offset="1.0"/>
+                                
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Button x:Name="SignUpButton"
+                                Text="SIGN UP"
+                                BackgroundColor="Transparent"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                HeightRequest="50"
+                                CornerRadius="25"/>
+                    </Border>
+
+                </VerticalStackLayout>
+            </ScrollView>
+        </Border>
+
+    </Grid>
+</ContentPage>

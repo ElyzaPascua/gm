@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="groupmate.HelpSupportPage"
+             Title="HelpSupportPage"
+             BackgroundColor="#F4E6FF">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <HorizontalStackLayout 
+            
+            Grid.Row="0" 
+            Padding="10,20" 
+            Spacing="10">
+            
+            <ImageButton 
+                        Source="back.png"
+                         WidthRequest="25"
+                         HeightRequest="25"
+                         BackgroundColor="Transparent"
+                         />
+            <Label 
+                    Text="Help Support"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   TextColor="#3D0066"
+                   VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+
+
+        <VerticalStackLayout
+                            Grid.Row="1"
+                             Padding="30,40"
+                             Spacing="25"
+                             VerticalOptions="Start">
+
+            <Border
+                    StrokeThickness="0"
+                    BackgroundColor="White"
+                    StrokeShape="RoundRectangle 20"
+                    HeightRequest="60">
+                
+                <Button 
+                        Text="About Us"
+                        BackgroundColor="Transparent"
+                        TextColor="#3D0066"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        />
+            </Border>
+
+            <Border 
+                    StrokeThickness="0"
+                    BackgroundColor="White"
+                    StrokeShape="RoundRectangle 20"
+                    HeightRequest="60">
+                    
+                <Button 
+                        Text="Getting Started"
+                        BackgroundColor="Transparent"
+                        TextColor="#3D0066"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        />
+            </Border>
+        </VerticalStackLayout>
+
+
+        <Border
+                    Grid.Row="2"
+                        StrokeThickness="0"
+                        HeightRequest="80"
+                        StrokeShape="RoundRectangle 25"
+                        Background="#E5D4FF"
+                        Margin="100,0,100,20"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="End">  
+
+            <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Spacing="60">
+
+                <VerticalStackLayout 
+                        HorizontalOptions="Center" 
+                        Spacing="3">
+
+                    <Image 
+                        Source="book.png" 
+                       WidthRequest="25" 
+                       HeightRequest="25"/>
+                    <Label 
+                        Text="add project" 
+                        FontSize="12" TextColor="#3D0066" 
+                        HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+
+                <Border
+                        WidthRequest="60"
+                        HeightRequest="60"
+                        StrokeThickness="0"
+                        Background="#7F00FF"
+                        StrokeShape="RoundRectangle 30"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+
+                    <Image 
+                        Source="home.png"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                </Border>
+
+                <VerticalStackLayout 
+                        HorizontalOptions="Center" 
+                        Spacing="3">
+
+                    <Image 
+                        Source="search.png" 
+                        WidthRequest="25" 
+                        HeightRequest="25"/>
+
+                    <Label 
+            
+                        Text="search project"
+                        FontSize="12" 
+                        TextColor="#3D0066" 
+                        HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Border>
+    </Grid>
+</ContentPage>

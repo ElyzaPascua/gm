@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="groupmate.HomePage"
+             Title="HomePage"
+             Background="#F4E6FF">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+
+        
+        <HorizontalStackLayout
+                               Grid.Row="0"
+                               HorizontalOptions="End"
+                               Spacing="5"
+                               Padding="0"
+                               Margin="0,10,0,0">
+
+                <ImageButton 
+                                Source="notification.png"
+                             HeightRequest="60"
+                             WidthRequest="200"
+                             BackgroundColor="Transparent"
+                             Clicked="OnNotificationClicked"/>
+
+            <ImageButton 
+                             Source="profile.png"
+                             HeightRequest="60"
+                             WidthRequest="150"
+                             BackgroundColor="Transparent"
+                             Clicked="OnProfileClicked"/>
+        </HorizontalStackLayout>
+
+
+        <ScrollView 
+            
+            Grid.Row="1">
+            
+            <VerticalStackLayout 
+                Padding="20" 
+                Spacing="20">
+
+
+                <VerticalStackLayout Spacing="5">
+                    <Label 
+                            Text="Group"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           TextColor="#3D0066"
+                           Margin="10,10,0,0"/>
+                    
+                    <BoxView 
+                            HeightRequest="2"
+                             WidthRequest="1400"
+                             BackgroundColor="#7F00FF"
+                             HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+
+
+                <VerticalStackLayout 
+                    Spacing="15">
+
+
+                    <Border 
+                            StrokeThickness="0"
+                            StrokeShape="RoundRectangle 20"
+                            HeightRequest="120">
+                        
+                        <Border.Background>
+                            
+                            <LinearGradientBrush EndPoint="1,1">
+                                
+                                <GradientStop Color="#7F00FF" 
+                                              Offset="0.0"/>
+                                
+                                <GradientStop Color="#B366FF" 
+                                              Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <Grid 
+                            Padding="15" 
+                            ColumnDefinitions="*,Auto">
+                            
+                            <VerticalStackLayout 
+                                
+                                Grid.Column="0" 
+                                Spacing="5">
+                                
+                                <Label 
+                                    Text="1. Group: IMP"
+                                       TextColor="White"
+                                       FontAttributes="Bold"
+                                       FontSize="18"/>
+                                
+                                <Label 
+                                    Text="Task: Create App"
+                                       TextColor="White"
+                                       FontSize="16"
+                                    />
+
+                                <Border 
+                                    WidthRequest="130"
+                                        HeightRequest="30"
+                                        StrokeThickness="0"
+                                        Background="#B366FF"
+                                        StrokeShape="RoundRectangle 20"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Start">
+                                    <HorizontalStackLayout 
+                                        HorizontalOptions="Center" 
+                                        VerticalOptions="Center" 
+                                        Spacing="5">
+                                        
+                                        <Image 
+                                            Source="chat.png"
+                                               WidthRequest="20"
+                                               HeightRequest="20"
+                                            />
+                                        <Label 
+                                            Text="chat"
+                                               TextColor="White"
+                                               FontSize="14"
+                                               VerticalOptions="Center"/>
+                                        
+                                    </HorizontalStackLayout>
+                                </Border>
+                            </VerticalStackLayout>
+                            
+                       <Border 
+                                    Grid.Column="1"
+                                    BackgroundColor="#E2C1FB"
+                                    StrokeThickness="0"
+                                    WidthRequest="45"
+                                    HeightRequest="45"
+                                    StrokeShape="RoundRectangle 25"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Center">
+                           
+                                <Label Text="50%"
+                                       TextColor="White"
+                                       FontAttributes="Bold"
+                                       FontSize="14"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"/>
+                           
+                            </Border>
+                        </Grid>
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                
+                                Tapped="OnGroup1Tapped"/>
+                            
+                        </Border.GestureRecognizers>
+                    </Border>
+
+                    <Border
+                        StrokeThickness="0"
+                            StrokeShape="RoundRectangle 20"
+                            HeightRequest="120">
+                        
+                        <Border.Background>
+                            <LinearGradientBrush 
+                                EndPoint="1,1">
+                                <GradientStop 
+                                    Color="#8B00E0" 
+                                    Offset="0.0"/>
+                                <GradientStop 
+                                    Color="#B366FF" 
+                                    Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <Grid 
+                            Padding="15"
+                            ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout 
+                                Grid.Column="0"
+                                Spacing="5">
+                                
+                                <Label 
+                                    Text="2. Group: App Dev"
+                                       TextColor="White"
+                                       FontAttributes="Bold"
+                                       FontSize="18"/>
+                                
+                                <Label
+                                    Text="Task: Wireframe"
+                                       TextColor="White"
+                                       FontSize="16"/>
+
+
+                                <Border
+                                        WidthRequest="130"
+                                        HeightRequest="30"
+                                        StrokeThickness="0"
+                                        Background="#B366FF"
+                                        StrokeShape="RoundRectangle 20"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+                                    
+                                    <HorizontalStackLayout 
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        Spacing="5">
+                                        
+                                        <Image 
+                                            Source="chat.png"
+                                               WidthRequest="20"
+                                               HeightRequest="20"/>
+                                        
+                                        <Label 
+                                            Text="chat"
+                                               
+                                               TextColor="White"
+                                               FontSize="14"
+                                               VerticalOptions="Center"/>
+                                        
+                                    </HorizontalStackLayout>
+                                </Border>
+                            </VerticalStackLayout>
+
+                            
+                            <Border
+                                Grid.Column="1"
+                                    BackgroundColor="#E2C1FB"
+                                    StrokeThickness="0"
+                                    WidthRequest="45"
+                                    HeightRequest="45"
+                                    StrokeShape="RoundRectangle 25"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Center">
+                                
+                                <Label 
+                                    Text="80%"
+                                       TextColor="White"
+                                       FontAttributes="Bold"
+                                       FontSize="14"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"/>
+                                
+                            </Border>
+                        </Grid>
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnGroup2Tapped"/>
+                        </Border.GestureRecognizers>
+                    </Border>
+
+                    
+                    <Border 
+                        StrokeThickness="0"
+                            StrokeShape="RoundRectangle 20"
+                            HeightRequest="120">
+                        
+                        <Border.Background>
+                            <LinearGradientBrush 
+                                EndPoint="1,1">
+                                <GradientStop
+                                    Color="#6B00B3" 
+                                    Offset="0.0"/>
+                                <GradientStop 
+                                    Color="#B366FF" 
+                                    Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <Grid 
+                            Padding="15" 
+                            ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout 
+                                
+                                Grid.Column="0" 
+                                Spacing="5">
+                                <Label
+                                    Text="3. Group: MoR"
+                                       TextColor="White"
+                                       FontAttributes="Bold"
+                                       FontSize="18"/>
+                                
+                                <Label Text="Task: Thesis"
+                                       TextColor="White"
+                                       FontSize="16"/>
+
+                                
+                                <Border 
+                                    WidthRequest="130"
+                                        HeightRequest="30"
+                                        StrokeThickness="0"
+                                        Background="#B366FF"
+                                        StrokeShape="RoundRectangle 20"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+                                    
+                                    <HorizontalStackLayout
+                                        HorizontalOptions="Center" 
+                                        VerticalOptions="Center" 
+                                        Spacing="5">
+                                        
+                                        <Image
+                                            Source="chat.png"
+                                               WidthRequest="20"
+                                               HeightRequest="20"/>
+                                        
+                                        <Label Text="chat"
+                                               TextColor="White"
+                                               FontSize="14"
+                                               VerticalOptions="Center"/>
+                                        
+                                    </HorizontalStackLayout>
+                                </Border>
+                            </VerticalStackLayout>
+
+                            
+                            <Border 
+                                Grid.Column="1"
+                                    BackgroundColor="#E2C1FB"
+                                    StrokeThickness="0"
+                                    WidthRequest="45"
+                                    HeightRequest="45"
+                                    StrokeShape="RoundRectangle 25"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Center">
+                                
+                                <Label 
+                                    Text="30%"
+                                       TextColor="White"
+                                       FontAttributes="Bold"
+                                       FontSize="14"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"/>
+                                
+                            </Border>
+                        </Grid>
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                
+                                Tapped="OnGroup3Tapped"/>
+                            
+                        </Border.GestureRecognizers>
+                    </Border>
+
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+
+
+        <Border
+            Grid.Row="2"
+                StrokeThickness="0"
+                HeightRequest="80"
+                StrokeShape="RoundRectangle 25"
+                Background="#E5D4FF"
+                Margin="100,0,100,20"
+                HorizontalOptions="Fill"
+                VerticalOptions="End">
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Spacing="60">
+
+                <VerticalStackLayout 
+                    HorizontalOptions="Center" 
+                    Spacing="3">
+                    
+                    <Image Source="book.png" 
+                           WidthRequest="25" 
+                           HeightRequest="25"/>
+                    <Label 
+
+                        
+                        Text="add project" 
+                        FontSize="12" TextColor="#3D0066" 
+                        HorizontalOptions="Center"/>
+                    
+                </VerticalStackLayout>
+
+                <Border
+                        WidthRequest="60"
+                        HeightRequest="60"
+                        StrokeThickness="0"
+                        Background="#7F00FF"
+                        StrokeShape="RoundRectangle 30"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+                    
+                    <Image 
+                            Source="home.png"
+                           WidthRequest="30"
+                           HeightRequest="30"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+
+                <VerticalStackLayout 
+                    HorizontalOptions="Center" 
+                    Spacing="3">
+                    
+                    <Image 
+                        Source="search.png" 
+                        WidthRequest="25" 
+                        HeightRequest="25"/>
+                    
+                    <Label 
+                        
+                        Text="search project"
+                        FontSize="12" 
+                        TextColor="#3D0066" 
+                        HorizontalOptions="Center"/>
+                    
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Border>
+    </Grid>
+</ContentPage>
+    

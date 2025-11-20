@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="groupmate.AboutUsPage"
+             Title="AboutUsPage"
+             BackgroundColor="#F4E6FF">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+
+
+        <HorizontalStackLayout 
+                        Grid.Row="0" 
+                        Padding="10,20" 
+                        Spacing="10">
+            
+            <ImageButton Source="back.png"
+                         WidthRequest="25"
+                         HeightRequest="25"
+                         BackgroundColor="Transparent"
+                        />
+            <Label 
+                    Text="About Us"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   TextColor="#3D0066"
+                   VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+
+
+        <ScrollView 
+            Grid.Row="1">
+            
+            <Label 
+                    Padding="30"
+                   TextColor="#3D0066"
+                   FontSize="16">
+                
+                <Label.FormattedText>
+                    
+                    <FormattedString>
+                        
+                        <Span 
+                            Text="Group Mate " 
+                            FontAttributes="Bold"
+                            TextColor="Black"/>
+                        
+                        <Span 
+                            Text="is designed to make school project collaboration easier and more organized. Our platform helps students form groups, assign roles, set deadlines, track progress, and communicate efficiently—all in one place. Whether you’re the leader or a member, Group Mate ensures every task is clear, every deadline is met, and every group stays connected."
+                            TextColor="Black"
+                            />
+                        
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </ScrollView>
+
+
+                <Border
+                        Grid.Row="2"
+                        StrokeThickness="0"
+                        HeightRequest="80"
+                        StrokeShape="RoundRectangle 25"
+                        Background="#E5D4FF"
+                        Margin="100,0,100,20"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="End">
+
+            <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Spacing="60">
+
+                <VerticalStackLayout 
+                        HorizontalOptions="Center" 
+                        Spacing="3">
+
+                    <Image 
+                        Source="book.png" 
+                       WidthRequest="25" 
+                       HeightRequest="25"/>
+                    <Label 
+ 
+                        Text="add project" 
+                        FontSize="12" TextColor="#3D0066" 
+                        HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+
+                <Border
+                        WidthRequest="60"
+                        HeightRequest="60"
+                        StrokeThickness="0"
+                        Background="#7F00FF"
+                        StrokeShape="RoundRectangle 30"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+
+                    <Image 
+                        Source="home.png"
+                       WidthRequest="30"
+                       HeightRequest="30"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                        </Border>
+
+                <VerticalStackLayout 
+                        HorizontalOptions="Center" 
+                        Spacing="3">
+
+                    <Image 
+                        Source="search.png" 
+                        WidthRequest="25" 
+                        HeightRequest="25"/>
+
+                    <Label 
+            
+                        Text="search project"
+                        FontSize="12" 
+                        TextColor="#3D0066" 
+                        HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Border>
+    </Grid>
+</ContentPage>

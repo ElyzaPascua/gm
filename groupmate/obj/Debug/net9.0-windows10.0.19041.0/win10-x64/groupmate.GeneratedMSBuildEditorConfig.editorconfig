@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net9.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = groupmate
+build_property.ProjectDir = C:\Users\Joan\source\repos\GroupMate3.11\groupmate\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/AboutUsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.AboutUsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AboutUsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AboutUsPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/ForgotPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ForgotPasswordPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/GettingStartedPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.GettingStartedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = GettingStartedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = GettingStartedPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/HelpSupportPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.HelpSupportPage.xaml
+build_metadata.AdditionalFiles.TargetPath = HelpSupportPage.xaml
+build_metadata.AdditionalFiles.RelativePath = HelpSupportPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = HomePage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/JoinGroupPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.JoinGroupPage.xaml
+build_metadata.AdditionalFiles.TargetPath = JoinGroupPage.xaml
+build_metadata.AdditionalFiles.RelativePath = JoinGroupPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/NewPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.NewPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = NewPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = NewPasswordPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/Notification.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.Notification.xaml
+build_metadata.AdditionalFiles.TargetPath = Notification.xaml
+build_metadata.AdditionalFiles.RelativePath = Notification.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/NotificationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.NotificationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = NotificationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = NotificationPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/OtpVerificationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.OtpVerificationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = OtpVerificationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = OtpVerificationPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/OtpVerificationPagePass.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.OtpVerificationPagePass.xaml
+build_metadata.AdditionalFiles.TargetPath = OtpVerificationPagePass.xaml
+build_metadata.AdditionalFiles.RelativePath = OtpVerificationPagePass.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/SignupPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.SignupPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SignupPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SignupPage.xaml
+
+[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/SplashPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = groupmate.SplashPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SplashPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SplashPage.xaml

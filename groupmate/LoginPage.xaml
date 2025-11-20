@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="groupmate.LoginPage"
+             Title="LoginPage"
+             BackgroundColor="White">
+
+    <Grid RowDefinitions="Auto,*">
+
+        
+        <Grid HeightRequest="350">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    
+                    <GradientStop Color="#9638E0" 
+                                  Offset="0.0" />
+                    <GradientStop Color="#521F7A" 
+                                  Offset="1.0" />
+                    
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <Image x:Name="HeaderImage"
+                   Source="humas.png"
+                   HeightRequest="220"
+                   VerticalOptions="End"
+                   Margin="0,0,0,40"
+                   HorizontalOptions="Center"/>
+
+            <Path Fill="White"
+                  VerticalOptions="End"
+                  Aspect="Fill"
+                  HeightRequest="60"
+                  Data="M0,50 C150,100 300,0 400,50 L400,150 L0,150 Z"/>
+        </Grid>
+
+     
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="30,20" Spacing="25">
+
+                
+                <Border StrokeShape="RoundRectangle 25" 
+                        StrokeThickness="1" 
+                        Stroke="#D9D9D9"
+                        BackgroundColor="White"
+                        Padding="10">
+                    <Border.Shadow>
+                        <Shadow Brush="#55000000" Radius="5" />
+                    </Border.Shadow>
+                    <Grid ColumnDefinitions="Auto,*" VerticalOptions="Center">
+                        <Image x:Name="EmailIcon"
+                               Source="profile.png" 
+                               HeightRequest="22" 
+                               VerticalOptions="Center"/>
+                        <Entry x:Name="EmailEntry"
+                               Grid.Column="1"
+                               Placeholder="example@gmail.com"
+                               PlaceholderColor="#B3B3B3"
+                               TextColor="Black"
+                               FontSize="16"
+                               Margin="10,0,0,0"/>
+                    </Grid>
+                </Border>
+
+                
+                <Border StrokeShape="RoundRectangle 25" 
+                        StrokeThickness="1" 
+                        Stroke="#D9D9D9"
+                        BackgroundColor="White"
+                        Padding="10">
+                    <Border.Shadow>
+                        <Shadow Brush="#55000000" Radius="5" />
+                    </Border.Shadow>
+                    <Grid ColumnDefinitions="Auto,*" VerticalOptions="Center">
+                        <Image x:Name="PasswordIcon"
+                               Source="lock.png" 
+                               HeightRequest="22" 
+                               VerticalOptions="Center"/>
+                        <Entry x:Name="PasswordEntry"
+                               Grid.Column="1"
+                               Placeholder="Password"
+                               IsPassword="True"
+                               PlaceholderColor="#B3B3B3"
+                               TextColor="Black"
+                               FontSize="16"
+                               Margin="10,0,0,0"/>
+                    </Grid>
+                </Border>
+
+                
+                <Border StrokeShape="RoundRectangle 25"
+                        StrokeThickness="0">
+                    <Border.Background>
+                        
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#9638E0" 
+                                          Offset="0.0"/>
+                            
+                            <GradientStop Color="#521F7A" 
+                                          Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    
+                    <Button x:Name="LoginButton"
+                            Text="LOGIN"
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            HeightRequest="50"
+                            FontSize="16"/>
+                </Border>
+
+               
+                <Label x:Name="ForgotPasswordLabel"
+                       Text="Forgot Password?" 
+                       HorizontalOptions="Center"
+                       TextColor="#7F00FF"
+                       FontSize="14">
+                    
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Tapped="OnForgotPasswordTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+                
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Label Text="New User?" 
+                           TextColor="Black" 
+                           FontSize="14"/>
+                    
+                    <Label x:Name="SignUpLabel"
+                           Text=" Sign Up" 
+                           TextColor="#7F00FF" 
+                           FontSize="14" 
+                           FontAttributes="Bold">
+                        
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="OnSignUpTapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

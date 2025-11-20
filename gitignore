@@ -1,0 +1,12 @@
+# Visual Studio cache
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.log
+*.pdb
+*.tmp
+*.bak
+gatchapon/Resources/Raw/*.json
+
