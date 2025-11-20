@@ -6,4 +6,8 @@ public partial class SplashPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void OnSplashPageTapped(object sender, EventArgs e)
+    {
+        Application.Current.MainPage = new SignupPage();
+    }
 }

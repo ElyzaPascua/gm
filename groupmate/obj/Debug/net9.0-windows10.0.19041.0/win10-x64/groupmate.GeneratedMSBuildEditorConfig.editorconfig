@@ -1,5 +1,7 @@
 is_global = true
 build_property.TargetFramework = net9.0-windows10.0.19041.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v9.0
 build_property.TargetPlatformMinVersion = 10.0.17763.0
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
@@ -8,7 +10,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = groupmate
-build_property.ProjectDir = C:\Users\Joan\source\repos\GroupMate3.11\groupmate\
+build_property.ProjectDir = C:\Users\elyza\gm\groupmate\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -22,115 +24,115 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/AboutUsPage.xaml]
+[C:/Users/elyza/gm/groupmate/AboutUsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.AboutUsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = AboutUsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = AboutUsPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/App.xaml]
+[C:/Users/elyza/gm/groupmate/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/AppShell.xaml]
+[C:/Users/elyza/gm/groupmate/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/ForgotPasswordPage.xaml]
+[C:/Users/elyza/gm/groupmate/ForgotPasswordPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.ForgotPasswordPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ForgotPasswordPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ForgotPasswordPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/GettingStartedPage.xaml]
+[C:/Users/elyza/gm/groupmate/GettingStartedPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.GettingStartedPage.xaml
 build_metadata.AdditionalFiles.TargetPath = GettingStartedPage.xaml
 build_metadata.AdditionalFiles.RelativePath = GettingStartedPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/HelpSupportPage.xaml]
+[C:/Users/elyza/gm/groupmate/HelpSupportPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.HelpSupportPage.xaml
 build_metadata.AdditionalFiles.TargetPath = HelpSupportPage.xaml
 build_metadata.AdditionalFiles.RelativePath = HelpSupportPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/HomePage.xaml]
+[C:/Users/elyza/gm/groupmate/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = HomePage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/JoinGroupPage.xaml]
+[C:/Users/elyza/gm/groupmate/JoinGroupPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.JoinGroupPage.xaml
 build_metadata.AdditionalFiles.TargetPath = JoinGroupPage.xaml
 build_metadata.AdditionalFiles.RelativePath = JoinGroupPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/LoginPage.xaml]
+[C:/Users/elyza/gm/groupmate/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/MainPage.xaml]
+[C:/Users/elyza/gm/groupmate/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/NewPasswordPage.xaml]
+[C:/Users/elyza/gm/groupmate/NewPasswordPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.NewPasswordPage.xaml
 build_metadata.AdditionalFiles.TargetPath = NewPasswordPage.xaml
 build_metadata.AdditionalFiles.RelativePath = NewPasswordPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/Notification.xaml]
+[C:/Users/elyza/gm/groupmate/Notification.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.Notification.xaml
 build_metadata.AdditionalFiles.TargetPath = Notification.xaml
 build_metadata.AdditionalFiles.RelativePath = Notification.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/NotificationPage.xaml]
+[C:/Users/elyza/gm/groupmate/NotificationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.NotificationPage.xaml
 build_metadata.AdditionalFiles.TargetPath = NotificationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = NotificationPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/OtpVerificationPage.xaml]
+[C:/Users/elyza/gm/groupmate/OtpVerificationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.OtpVerificationPage.xaml
 build_metadata.AdditionalFiles.TargetPath = OtpVerificationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = OtpVerificationPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/OtpVerificationPagePass.xaml]
+[C:/Users/elyza/gm/groupmate/OtpVerificationPagePass.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.OtpVerificationPagePass.xaml
 build_metadata.AdditionalFiles.TargetPath = OtpVerificationPagePass.xaml
 build_metadata.AdditionalFiles.RelativePath = OtpVerificationPagePass.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/Resources/Styles/Colors.xaml]
+[C:/Users/elyza/gm/groupmate/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/Resources/Styles/Styles.xaml]
+[C:/Users/elyza/gm/groupmate/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/SignupPage.xaml]
+[C:/Users/elyza/gm/groupmate/SignupPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.SignupPage.xaml
 build_metadata.AdditionalFiles.TargetPath = SignupPage.xaml
 build_metadata.AdditionalFiles.RelativePath = SignupPage.xaml
 
-[C:/Users/Joan/source/repos/GroupMate3.11/groupmate/SplashPage.xaml]
+[C:/Users/elyza/gm/groupmate/SplashPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = groupmate.SplashPage.xaml
 build_metadata.AdditionalFiles.TargetPath = SplashPage.xaml

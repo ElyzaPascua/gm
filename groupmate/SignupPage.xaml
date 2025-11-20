@@ -144,12 +144,21 @@
                         </Border.Background>
                         <Button x:Name="SignUpButton"
                                 Text="SIGN UP"
+                                Clicked="SignupClicked"
                                 BackgroundColor="Transparent"
                                 TextColor="White"
                                 FontAttributes="Bold"
                                 HeightRequest="50"
                                 CornerRadius="25"/>
                     </Border>
+                    <Label
+                    x:Name="login"
+                    Text="Already have an account? Login"
+                    >       
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Login_Tapped" />
+                    </Label.GestureRecognizers>
+                    </Label>
 
                 </VerticalStackLayout>
             </ScrollView>
