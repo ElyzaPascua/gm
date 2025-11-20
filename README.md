@@ -1,6 +1,6 @@
-# GroupMate2.0
-# GroupMate3.0
-# GroupMate4.0
-# GroupMate
-# GroupMate
-# GroupMate
+tools -> nuget packet manager -> manage nugget packages for sol -> browse
+tas dl mo to:
+FirebaseAuthentication
+FirebaseDatabase
+Google.Cloud.Firestore
+
