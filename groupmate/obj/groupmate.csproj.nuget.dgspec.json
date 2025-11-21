@@ -79,6 +79,10 @@
               "target": "Package",
               "version": "[3.13.0, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.5, )"
@@ -144,6 +148,10 @@
               "target": "Package",
               "version": "[3.13.0, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.5, )"
@@ -204,6 +212,10 @@
             "Google.Cloud.Firestore": {
               "target": "Package",
               "version": "[3.13.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.14.1, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -266,6 +278,10 @@
             "Google.Cloud.Firestore": {
               "target": "Package",
               "version": "[3.13.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.14.1, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",

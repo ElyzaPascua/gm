@@ -98,6 +98,7 @@
                 </Border.Background>
                 <Button 
                         Text="VERIFY"
+                        Clicked="Verify_Clicked"
                         BackgroundColor="Transparent"
                         TextColor="White"
                         FontAttributes="Bold"

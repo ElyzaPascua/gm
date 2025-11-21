@@ -1,3 +1,4 @@
+
 namespace groupmate;
 
 public partial class OtpVerificationPage : ContentPage
@@ -15,5 +16,9 @@ public partial class OtpVerificationPage : ContentPage
     {
        
         await Shell.Current.GoToAsync("..");
+    }
+    private async void Verify_Clicked(object sender, EventArgs e)
+    {
+        Application.Current.MainPage = new LoginPage();
     }
 }
