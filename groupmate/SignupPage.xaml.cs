@@ -7,6 +7,7 @@ using MailKit;
 using MailKit.Net.Smtp;
 using MimeKit;
 using System.Linq;
+using Microsoft.Maui.Controls;
 namespace groupmate;
 
 public partial class SignupPage : ContentPage
@@ -18,15 +19,33 @@ public partial class SignupPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    
     public class User
     {
+        
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Course { get; set; }
         public string Password { get; set; }
+        public string Code { get; set; }
     }
-    private async void SignupClicked(object sender, EventArgs e)
+    public class shortcut
+    {
+        private readonly FirebaseClient fbc = new FirebaseClient("https://groupmate-8d778-default-rtdb.asia-southeast1.firebasedatabase.app/");
+        public async Task<bool> LoginAsync(string email)
+        {
+            var users = await fbc
+                .Child("Users")
+                .OnceAsync<User>();
+
+            return users.Any(u => u.Object.Email == email);
+        }
+
+    }
+
+    public async void SignupClicked(object sender, EventArgs e)
     {
         string email = EmailEntry.Text;
         string password = PasswordEntry.Text;
@@ -67,7 +86,24 @@ public partial class SignupPage : ContentPage
             return;
         }
         
-        //Send OTP
+        shortcut firebase = new shortcut();
+        bool ket = await firebase.LoginAsync(email);
+        if (ket)
+        {
+            await DisplayAlert("Error", "Email is used.", "OK");
+            return;
+        }
+
+
+        Random ran = new Random();
+        int po = ran.Next(100000, 999999);
+        string otpcode = po.ToString();
+
+        var udb = new User
+        {
+            Code = otpcode,
+        };
+
         MimeMessage mm = new MimeMessage();
         mm.From.Add(new MailboxAddress("GroupMate App", "lianzpascua08@gmail.com"));
         mm.To.Add(MailboxAddress.Parse(email));
@@ -75,7 +111,7 @@ public partial class SignupPage : ContentPage
         mm.Subject = "Verification OTP";
         mm.Body = new TextPart("plain")
         {
-            Text = @"this is test otp"
+            Text = $"this is your verification code: {otpcode}" 
         };
         
         SmtpClient client = new SmtpClient();
@@ -90,7 +126,8 @@ public partial class SignupPage : ContentPage
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Error", ex.Message, "OK");
+            await DisplayAlert("Email Error", $"Failed to send OTP email. Please ensure your email is valid: {ex.Message}", "OK");
+            return;
         }
         finally
         {
@@ -98,41 +135,21 @@ public partial class SignupPage : ContentPage
             client.Dispose();
         }
         //database
-        FirebaseClient fbc = new FirebaseClient("https://groupmate-8d778-default-rtdb.asia-southeast1.firebasedatabase.app/",
-            new FirebaseOptions
-            {
-                AuthTokenAsyncFactory = () => Task.FromResult("LkOXorEute2tH7ok17hkJQT6kNM9Rb5hygdKGccV")
-            }
-            
-            );
+
         var user = new User
         {
             FirstName = firstName,
             LastName = lastName,
             Email = email,
             Course = course,
-            Password = password
+            Password = password,
+            Code = otpcode
         };
-
-        try
-        {
-            await fbc.Child("Users").PostAsync(user);
-            
-        }
-        catch (Exception dbEx)
-        {
-            await DisplayAlert("Database Error", $"Failed to save user data: {dbEx.Message}", "OK");
-            return; 
-        }
-
-
-
-
+        Application.Current.MainPage = new OtpVerificationPage(user);
 
         
-
-        Application.Current.MainPage = new OtpVerificationPage();
         
+
 
     }
     private async void Login_Tapped(object sender, TappedEventArgs e)

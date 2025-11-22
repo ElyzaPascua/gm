@@ -103,6 +103,7 @@
                     
                     <Button x:Name="LoginButton"
                             Text="LOGIN"
+                            Clicked="Login_Clicked"
                             BackgroundColor="Transparent"
                             TextColor="White"
                             FontAttributes="Bold"
